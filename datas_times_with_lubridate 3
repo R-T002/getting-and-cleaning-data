@@ -1,0 +1,18 @@
+library(lubridate)
+help(package=lubridate)
+
+# Huge number of possibilities with lubridate.
+# We'll just cover the basics in this lesson.
+# Give you the confidence to explore further.
+
+# Dates and date-times
+today() # Current day
+now() # Current time
+
+# Pick a date in the past
+ymd('1985-08-25') # most common - big to small
+ymd('1985/08/25') # alternative
+ymd('85-8-25') # make sure you specify year fully
+
+# Also handles vectors of dates
+ymd(c('2014-05-14', '2014-09-22'))
